@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0811B92C2EB0AD009B3894 /* TransportAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811B82C2EB0AD009B3894 /* TransportAPIStore.swift */; };
+		6D0811BC2C2EB400009B3894 /* TransportBusUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811BB2C2EB400009B3894 /* TransportBusUseCase.swift */; };
+		6D0811C12C2EBDFB009B3894 /* TransportBusUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811C02C2EBDFB009B3894 /* TransportBusUseCaseTests.swift */; };
+		6D0811C52C2EC9B6009B3894 /* BusAPIXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811C42C2EC9B6009B3894 /* BusAPIXMLParser.swift */; };
+		6D0811C92C2ECA24009B3894 /* BusAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811C82C2ECA24009B3894 /* BusAPIResponse.swift */; };
+		6D0811CB2C2EF838009B3894 /* StationAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811CA2C2EF838009B3894 /* StationAPIResponse.swift */; };
+		6D0811CD2C2EF8B7009B3894 /* OpenAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811CC2C2EF8B7009B3894 /* OpenAPIResponse.swift */; };
+		6D0811CF2C2EFA54009B3894 /* StationAPIXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811CE2C2EFA54009B3894 /* StationAPIXMLParser.swift */; };
+		6D0811D12C2EFB6F009B3894 /* TransportStationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811D02C2EFB6F009B3894 /* TransportStationUseCase.swift */; };
 		6D847C3D2C2C5A8C002C8E09 /* primusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C3C2C2C5A8C002C8E09 /* primusApp.swift */; };
 		6D847C3F2C2C5A8C002C8E09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C3E2C2C5A8C002C8E09 /* ContentView.swift */; };
 		6D847C412C2C5A8C002C8E09 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C402C2C5A8C002C8E09 /* Item.swift */; };
@@ -15,6 +24,15 @@
 		6D847C502C2C5A8E002C8E09 /* primusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C4F2C2C5A8E002C8E09 /* primusTests.swift */; };
 		6D847C5A2C2C5A8E002C8E09 /* primusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C592C2C5A8E002C8E09 /* primusUITests.swift */; };
 		6D847C5C2C2C5A8E002C8E09 /* primusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C5B2C2C5A8E002C8E09 /* primusUITestsLaunchTests.swift */; };
+		6D847C6C2C2C5CC9002C8E09 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 6D847C6B2C2C5CC9002C8E09 /* ComposableArchitecture */; };
+		6D847C6F2C2C6251002C8E09 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C6E2C2C623B002C8E09 /* MainTabView.swift */; };
+		6D847C732C2C6A5D002C8E09 /* MainTabStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C722C2C6A5D002C8E09 /* MainTabStore.swift */; };
+		6D847C772C2C6E22002C8E09 /* CommunityMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C762C2C6E22002C8E09 /* CommunityMainView.swift */; };
+		6D847C792C2C6E40002C8E09 /* TransportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C782C2C6E40002C8E09 /* TransportMainView.swift */; };
+		6D847C7B2C2C6E69002C8E09 /* StatusCheckMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C7A2C2C6E69002C8E09 /* StatusCheckMainView.swift */; };
+		6D847C7D2C2C7750002C8E09 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C7C2C2C7750002C8E09 /* MainTabBarView.swift */; };
+		6D847C7F2C2C79AC002C8E09 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C7E2C2C79AC002C8E09 /* MainNavigationView.swift */; };
+		6D847C812C2C7A74002C8E09 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C802C2C7A74002C8E09 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D0811B82C2EB0AD009B3894 /* TransportAPIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportAPIStore.swift; sourceTree = "<group>"; };
+		6D0811BB2C2EB400009B3894 /* TransportBusUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportBusUseCase.swift; sourceTree = "<group>"; };
+		6D0811BD2C2EB7CC009B3894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6D0811C02C2EBDFB009B3894 /* TransportBusUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportBusUseCaseTests.swift; sourceTree = "<group>"; };
+		6D0811C42C2EC9B6009B3894 /* BusAPIXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAPIXMLParser.swift; sourceTree = "<group>"; };
+		6D0811C82C2ECA24009B3894 /* BusAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAPIResponse.swift; sourceTree = "<group>"; };
+		6D0811CA2C2EF838009B3894 /* StationAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAPIResponse.swift; sourceTree = "<group>"; };
+		6D0811CC2C2EF8B7009B3894 /* OpenAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAPIResponse.swift; sourceTree = "<group>"; };
+		6D0811CE2C2EFA54009B3894 /* StationAPIXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAPIXMLParser.swift; sourceTree = "<group>"; };
+		6D0811D02C2EFB6F009B3894 /* TransportStationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStationUseCase.swift; sourceTree = "<group>"; };
+		6D2AE6932C2EA3F900D2F841 /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
 		6D847C392C2C5A8C002C8E09 /* primus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = primus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D847C3C2C2C5A8C002C8E09 /* primusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primusApp.swift; sourceTree = "<group>"; };
 		6D847C3E2C2C5A8C002C8E09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +76,14 @@
 		6D847C592C2C5A8E002C8E09 /* primusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primusUITests.swift; sourceTree = "<group>"; };
 		6D847C5B2C2C5A8E002C8E09 /* primusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6D847C682C2C5ABD002C8E09 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6D847C6E2C2C623B002C8E09 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		6D847C722C2C6A5D002C8E09 /* MainTabStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabStore.swift; sourceTree = "<group>"; };
+		6D847C762C2C6E22002C8E09 /* CommunityMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMainView.swift; sourceTree = "<group>"; };
+		6D847C782C2C6E40002C8E09 /* TransportMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportMainView.swift; sourceTree = "<group>"; };
+		6D847C7A2C2C6E69002C8E09 /* StatusCheckMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCheckMainView.swift; sourceTree = "<group>"; };
+		6D847C7C2C2C7750002C8E09 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		6D847C7E2C2C79AC002C8E09 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
+		6D847C802C2C7A74002C8E09 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D847C6C2C2C5CC9002C8E09 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,14 +112,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D0811BA2C2EB3D4009B3894 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				6D0811BB2C2EB400009B3894 /* TransportBusUseCase.swift */,
+				6D0811D02C2EFB6F009B3894 /* TransportStationUseCase.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		6D0811BE2C2EBDAA009B3894 /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D0811C02C2EBDFB009B3894 /* TransportBusUseCaseTests.swift */,
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		6D0811BF2C2EBDBB009B3894 /* UniTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UniTests;
+			sourceTree = "<group>";
+		};
+		6D0811C22C2EC996009B3894 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6D0811C32C2EC9A4009B3894 /* Transport */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6D0811C32C2EC9A4009B3894 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				6D0811C42C2EC9B6009B3894 /* BusAPIXMLParser.swift */,
+				6D0811CE2C2EFA54009B3894 /* StationAPIXMLParser.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		6D0811C62C2EC9ED009B3894 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				6D0811C72C2EC9F8009B3894 /* Transport */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		6D0811C72C2EC9F8009B3894 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				6D0811C82C2ECA24009B3894 /* BusAPIResponse.swift */,
+				6D0811CA2C2EF838009B3894 /* StationAPIResponse.swift */,
+				6D0811CC2C2EF8B7009B3894 /* OpenAPIResponse.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
 		6D847C302C2C5A8C002C8E09 = {
 			isa = PBXGroup;
 			children = (
+				6D2AE6932C2EA3F900D2F841 /* Secret.xcconfig */,
 				6D847C682C2C5ABD002C8E09 /* .gitignore */,
 				6D847C3B2C2C5A8C002C8E09 /* primus */,
 				6D847C4E2C2C5A8E002C8E09 /* primusTests */,
 				6D847C582C2C5A8E002C8E09 /* primusUITests */,
 				6D847C3A2C2C5A8C002C8E09 /* Products */,
+				6D847C6A2C2C5CC9002C8E09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +197,12 @@
 		6D847C3B2C2C5A8C002C8E09 /* primus */ = {
 			isa = PBXGroup;
 			children = (
+				6D0811BD2C2EB7CC009B3894 /* Info.plist */,
+				6D0811C62C2EC9ED009B3894 /* State */,
+				6D0811C22C2EC996009B3894 /* Service */,
+				6D847C712C2C6A17002C8E09 /* Store */,
+				6D847C702C2C6A04002C8E09 /* UseCase */,
+				6D847C6D2C2C6230002C8E09 /* View */,
 				6D847C3C2C2C5A8C002C8E09 /* primusApp.swift */,
 				6D847C3E2C2C5A8C002C8E09 /* ContentView.swift */,
 				6D847C402C2C5A8C002C8E09 /* Item.swift */,
@@ -118,6 +223,8 @@
 		6D847C4E2C2C5A8E002C8E09 /* primusTests */ = {
 			isa = PBXGroup;
 			children = (
+				6D0811BF2C2EBDBB009B3894 /* UniTests */,
+				6D0811BE2C2EBDAA009B3894 /* IntegrationTests */,
 				6D847C4F2C2C5A8E002C8E09 /* primusTests.swift */,
 			);
 			path = primusTests;
@@ -130,6 +237,44 @@
 				6D847C5B2C2C5A8E002C8E09 /* primusUITestsLaunchTests.swift */,
 			);
 			path = primusUITests;
+			sourceTree = "<group>";
+		};
+		6D847C6A2C2C5CC9002C8E09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D847C6D2C2C6230002C8E09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D847C6E2C2C623B002C8E09 /* MainTabView.swift */,
+				6D847C7A2C2C6E69002C8E09 /* StatusCheckMainView.swift */,
+				6D847C762C2C6E22002C8E09 /* CommunityMainView.swift */,
+				6D847C782C2C6E40002C8E09 /* TransportMainView.swift */,
+				6D847C7C2C2C7750002C8E09 /* MainTabBarView.swift */,
+				6D847C7E2C2C79AC002C8E09 /* MainNavigationView.swift */,
+				6D847C802C2C7A74002C8E09 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D847C702C2C6A04002C8E09 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				6D0811BA2C2EB3D4009B3894 /* Transport */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		6D847C712C2C6A17002C8E09 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				6D847C722C2C6A5D002C8E09 /* MainTabStore.swift */,
+				6D0811B82C2EB0AD009B3894 /* TransportAPIStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +293,9 @@
 			dependencies = (
 			);
 			name = primus;
+			packageProductDependencies = (
+				6D847C6B2C2C5CC9002C8E09 /* ComposableArchitecture */,
+			);
 			productName = primus;
 			productReference = 6D847C392C2C5A8C002C8E09 /* primus.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +368,9 @@
 				Base,
 			);
 			mainGroup = 6D847C302C2C5A8C002C8E09;
+			packageReferences = (
+				6D847C692C2C5CB2002C8E09 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 6D847C3A2C2C5A8C002C8E09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,8 +414,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D847C3F2C2C5A8C002C8E09 /* ContentView.swift in Sources */,
+				6D847C792C2C6E40002C8E09 /* TransportMainView.swift in Sources */,
+				6D0811B92C2EB0AD009B3894 /* TransportAPIStore.swift in Sources */,
 				6D847C412C2C5A8C002C8E09 /* Item.swift in Sources */,
+				6D847C7F2C2C79AC002C8E09 /* MainNavigationView.swift in Sources */,
+				6D0811CD2C2EF8B7009B3894 /* OpenAPIResponse.swift in Sources */,
+				6D0811C52C2EC9B6009B3894 /* BusAPIXMLParser.swift in Sources */,
+				6D847C772C2C6E22002C8E09 /* CommunityMainView.swift in Sources */,
+				6D0811CF2C2EFA54009B3894 /* StationAPIXMLParser.swift in Sources */,
+				6D847C7D2C2C7750002C8E09 /* MainTabBarView.swift in Sources */,
+				6D0811D12C2EFB6F009B3894 /* TransportStationUseCase.swift in Sources */,
 				6D847C3D2C2C5A8C002C8E09 /* primusApp.swift in Sources */,
+				6D847C812C2C7A74002C8E09 /* MainView.swift in Sources */,
+				6D0811BC2C2EB400009B3894 /* TransportBusUseCase.swift in Sources */,
+				6D847C6F2C2C6251002C8E09 /* MainTabView.swift in Sources */,
+				6D0811C92C2ECA24009B3894 /* BusAPIResponse.swift in Sources */,
+				6D847C7B2C2C6E69002C8E09 /* StatusCheckMainView.swift in Sources */,
+				6D0811CB2C2EF838009B3894 /* StationAPIResponse.swift in Sources */,
+				6D847C732C2C6A5D002C8E09 /* MainTabStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0811C12C2EBDFB009B3894 /* TransportBusUseCaseTests.swift in Sources */,
 				6D847C502C2C5A8E002C8E09 /* primusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +471,7 @@
 /* Begin XCBuildConfiguration section */
 		6D847C5D2C2C5A8E002C8E09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2AE6932C2EA3F900D2F841 /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -366,6 +535,7 @@
 		};
 		6D847C5E2C2C5A8E002C8E09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2AE6932C2EA3F900D2F841 /* Secret.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -431,6 +601,8 @@
 				DEVELOPMENT_TEAM = 695C73WCLD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = primus/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,6 +632,8 @@
 				DEVELOPMENT_TEAM = 695C73WCLD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = primus/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -590,6 +764,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D847C692C2C5CB2002C8E09 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.11.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D847C6B2C2C5CC9002C8E09 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D847C692C2C5CB2002C8E09 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D847C312C2C5A8C002C8E09 /* Project object */;
 }

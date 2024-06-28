@@ -1,122 +1,41 @@
 import SwiftUI
+import ComposableArchitecture
 
 struct MainTabView: View {
-    enum Tab {
-        case a, b, c
-    }
-    
-    @State private var selected: Tab = .a
+    typealias Feat = MainTabViewReducer
+    let store: StoreOf<Feat>
     
     var body: some View {
-        ZStack {
-            TabView(selection: $selected) {
-                Group {
-                    NavigationStack {
-                        AView()
+        WithViewStore(store, observe: { $0 }) { viewStore in
+            ZStack {
+                TabView(selection: viewStore.binding(
+                    get: \.selected,
+                    send: Feat.Action.selectTab
+                )) {
+                    ForEach(Feat.State.Tab.allCases, id: \.self) { tab in
+                        NavigationStack {
+                            tab.view
+                        }
+                        .tag(tab)
                     }
-                    .tag(Tab.a)
-                    
-                    NavigationStack {
-                        BView()
-                    }
-                    .tag(Tab.b)
-                    
-                    NavigationStack {
-                        CView()
-                    }
-                    .tag(Tab.c)
+                    .toolbar(.hidden, for: .tabBar)
                 }
-                .toolbar(.hidden, for: .tabBar)
-            }
-            
-            VStack {
-                Spacer()
-                tabBar
+                
+                VStack {
+                    Spacer()
+                    TabBarView(viewStore: viewStore)
+                }
             }
         }
     }
-    
-    var tabBar: some View {
-        HStack {
-            Spacer()
-            Button {
-                selected = .a
-            } label: {
-                VStack(alignment: .center) {
-                    Image(systemName: "star")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 22)
-                    if selected == .a {
-                        Text("View A")
-                            .font(.system(size: 11))
-                    }
-                }
-            }
-            .foregroundStyle(selected == .a ? Color.accentColor : Color.primary)
-            Spacer()
-            Button {
-                selected = .b
-            } label: {
-                VStack(alignment: .center) {
-                    Image(systemName: "gauge.with.dots.needle.bottom.0percent")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 22)
-                    if selected == .b {
-                        Text("View B")
-                            .font(.system(size: 11))
-                    }
-                }
-            }
-            .foregroundStyle(selected == .b ? Color.accentColor : Color.primary)
-            Spacer()
-            Button {
-                selected = .c
-            } label: {
-                VStack(alignment: .center) {
-                    Image(systemName: "fuelpump")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 22)
-                    if selected == .c {
-                        Text("View C")
-                            .font(.system(size: 11))
-                    }
-                }
-            }
-            .foregroundStyle(selected == .c ? Color.accentColor : Color.primary)
-            Spacer()
+}
+
+struct MainTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            MainTabView(
+                store: Store(initialState: .init(selected: .Transport), reducer: { MainTabViewReducer() })
+            )
         }
-        .padding()
-        .frame(height: 72)
-        .background {
-            RoundedRectangle(cornerRadius: 24)
-                .fill(Color("BackgroundColor"))
-                .shadow(color: Color("ForegroundColor").opacity(0.15), radius: 8, y: 2)
-        }
-        .padding(.horizontal)
     }
-}
-
-struct AView: View {
-    var body: some View {
-        Text("View A")
-    }
-}
-
-struct BView: View {
-    var body: some View {
-        Text("View B")
-    }
-}
-
-struct CView: View {
-    var body: some View {
-        Text("View C")
-    }
-}
-
-#Preview {
-    MainTabView()
 }

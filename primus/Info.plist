@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_ENCODING_KEY</key>
+	<string>$(API_ENCODING_KEY)</string>
+	<key>API_DECODING_KEY</key>
+	<string>$(API_DECODING_KEY)</string>
+	<key>BUS_LOCATION_API</key>
+	<string>$(BUS_LOCATION_API)</string>
+	<key>BUS_ROUTE_API</key>
+	<string>$(BUS_ROUTE_API)</string>
+	<key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>apis.data.go.kr</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <false/>
+                <key>NSRequiresCertificateTransparency</key>
+                <false/>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
