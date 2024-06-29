@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NMFClientId</key>
+	<string>$(NAVER_MAP_CLIENT_ID)</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>정류장과의 거리를 파악하기 위해, 회원님의 위치 정보가 필요합니다!</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>정류장과의 거리를 파악하기 위해, 회원님의 위치 정보가 필요합니다!</string>
+	<key>NSLocationDefaultAccuracyReduced</key>
+	<true/>
 	<key>API_ENCODING_KEY</key>
 	<string>$(API_ENCODING_KEY)</string>
 	<key>API_DECODING_KEY</key>
@@ -11,21 +19,21 @@
 	<key>BUS_ROUTE_API</key>
 	<string>$(BUS_ROUTE_API)</string>
 	<key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSExceptionDomains</key>
-        <dict>
-            <key>apis.data.go.kr</key>
-            <dict>
-                <key>NSIncludesSubdomains</key>
-                <true/>
-                <key>NSExceptionAllowsInsecureHTTPLoads</key>
-                <true/>
-                <key>NSExceptionRequiresForwardSecrecy</key>
-                <false/>
-                <key>NSRequiresCertificateTransparency</key>
-                <false/>
-            </dict>
-        </dict>
-    </dict>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>apis.data.go.kr</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSRequiresCertificateTransparency</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

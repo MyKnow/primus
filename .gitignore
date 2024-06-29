@@ -91,3 +91,8 @@ iOSInjectionProject/
 
 # Secret files
 Secret.xcconfig
+
+# Dependency Management
+# CocoaPods
+Pods/
+Podfile.lock

@@ -109,7 +109,7 @@ extension TransportBusUseCase: DependencyKey {
 }
 
 extension DependencyValues {
-    var apiUseCase: TransportBusUseCase {
+    var busAPIUseCase: TransportBusUseCase {
         get { self[TransportBusUseCase.self] }
         set { self[TransportBusUseCase.self] = newValue }
     }

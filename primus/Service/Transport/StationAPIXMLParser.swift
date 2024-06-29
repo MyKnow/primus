@@ -2,8 +2,8 @@ import Foundation
 
 class StationAPIXMLParser: NSObject, XMLParserDelegate {
     private var currentElement: String?
-    private var currentBusRouteStationList: BusRouteStationList?
-    private var busRouteStationList: [BusRouteStationList] = []
+    private var currentBusRouteStationList: BusRouteStation?
+    private var busRouteStationList: [BusRouteStation] = []
     
     private var queryTime: String = ""
     private var resultCode: String = ""
@@ -16,7 +16,7 @@ class StationAPIXMLParser: NSObject, XMLParserDelegate {
         currentElement = elementName
         
         if elementName == "busStationList" {
-            currentBusRouteStationList = BusRouteStationList(centerYn: .n, districtCD: "", mobileNo: "", regionName: .용인, stationID: "", stationName: "", x: "", y: "", stationSeq: "", turnYn: .n)
+            currentBusRouteStationList = BusRouteStation(centerYn: .n, districtCD: "", mobileNo: "", regionName: .용인, stationID: "", stationName: "", x: "", y: "", stationSeq: "", turnYn: .n)
         }
     }
     

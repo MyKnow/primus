@@ -43,7 +43,10 @@ struct MainTabViewReducer {
                 case .Status:
                     StatusCheckMainView()
                 case .Transport:
-                    TransportMainView()
+                    TransportMainView(store: Store(
+                        initialState: .init(),
+                        reducer: { TransportAPIReducer() }
+                    ))
                 case .Community:
                     CommunityMainView()
                 }

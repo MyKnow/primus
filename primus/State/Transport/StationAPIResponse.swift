@@ -22,11 +22,11 @@ struct StationAPIResponse {
 
 // MARK: - MsgBody
 struct StationMsgBody {
-    var busRouteStationList: [BusRouteStationList]
+    var busRouteStationList: [BusRouteStation]
 }
 
-// MARK: - BusRouteStationList
-struct BusRouteStationList {
+// MARK: - BusRouteStation
+struct BusRouteStation : Equatable {
     var centerYn: Yn
     var districtCD, mobileNo: String
     var regionName: RegionName

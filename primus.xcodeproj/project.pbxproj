@@ -16,6 +16,16 @@
 		6D0811CD2C2EF8B7009B3894 /* OpenAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811CC2C2EF8B7009B3894 /* OpenAPIResponse.swift */; };
 		6D0811CF2C2EFA54009B3894 /* StationAPIXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811CE2C2EFA54009B3894 /* StationAPIXMLParser.swift */; };
 		6D0811D12C2EFB6F009B3894 /* TransportStationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0811D02C2EFB6F009B3894 /* TransportStationUseCase.swift */; };
+		6D4C2FCB2C30036E009CC4E7 /* PrimusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4C2FCA2C30036E009CC4E7 /* PrimusTests.swift */; };
+		6D4C2FCD2C3058EB009CC4E7 /* BusRouteReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4C2FCC2C3058E7009CC4E7 /* BusRouteReducer.swift */; };
+		6D4C2FCF2C305900009CC4E7 /* BusRouteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4C2FCE2C3058FB009CC4E7 /* BusRouteState.swift */; };
+		6D6616062C2F288F00CEB79B /* KakaoMapsSDK-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 6D6616052C2F288F00CEB79B /* KakaoMapsSDK-SPM */; };
+		6D66160D2C2F28E900CEB79B /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6616082C2F28E900CEB79B /* MainNavigationView.swift */; };
+		6D66160F2C2F28E900CEB79B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D66160B2C2F28E900CEB79B /* MainView.swift */; };
+		6D6616102C2F28E900CEB79B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D66160A2C2F28E900CEB79B /* MainTabView.swift */; };
+		6D6616112C2F28E900CEB79B /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6616092C2F28E900CEB79B /* MainTabBarView.swift */; };
+		6D6616162C2F290100CEB79B /* NaverMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6616122C2F290100CEB79B /* NaverMap.swift */; };
+		6D6616182C2F290100CEB79B /* TransportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6616142C2F290100CEB79B /* TransportMainView.swift */; };
 		6D847C3D2C2C5A8C002C8E09 /* primusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C3C2C2C5A8C002C8E09 /* primusApp.swift */; };
 		6D847C3F2C2C5A8C002C8E09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C3E2C2C5A8C002C8E09 /* ContentView.swift */; };
 		6D847C412C2C5A8C002C8E09 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C402C2C5A8C002C8E09 /* Item.swift */; };
@@ -25,14 +35,11 @@
 		6D847C5A2C2C5A8E002C8E09 /* primusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C592C2C5A8E002C8E09 /* primusUITests.swift */; };
 		6D847C5C2C2C5A8E002C8E09 /* primusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C5B2C2C5A8E002C8E09 /* primusUITestsLaunchTests.swift */; };
 		6D847C6C2C2C5CC9002C8E09 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 6D847C6B2C2C5CC9002C8E09 /* ComposableArchitecture */; };
-		6D847C6F2C2C6251002C8E09 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C6E2C2C623B002C8E09 /* MainTabView.swift */; };
 		6D847C732C2C6A5D002C8E09 /* MainTabStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C722C2C6A5D002C8E09 /* MainTabStore.swift */; };
 		6D847C772C2C6E22002C8E09 /* CommunityMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C762C2C6E22002C8E09 /* CommunityMainView.swift */; };
-		6D847C792C2C6E40002C8E09 /* TransportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C782C2C6E40002C8E09 /* TransportMainView.swift */; };
 		6D847C7B2C2C6E69002C8E09 /* StatusCheckMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C7A2C2C6E69002C8E09 /* StatusCheckMainView.swift */; };
-		6D847C7D2C2C7750002C8E09 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C7C2C2C7750002C8E09 /* MainTabBarView.swift */; };
-		6D847C7F2C2C79AC002C8E09 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C7E2C2C79AC002C8E09 /* MainNavigationView.swift */; };
-		6D847C812C2C7A74002C8E09 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D847C802C2C7A74002C8E09 /* MainView.swift */; };
+		6DFF6CD62C2F341900D12097 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFF6CD52C2F341900D12097 /* Coordinator.swift */; };
+		6DFF6CD82C2F345100D12097 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = 6DFF6CD72C2F345100D12097 /* NMapsMap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +71,15 @@
 		6D0811CE2C2EFA54009B3894 /* StationAPIXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAPIXMLParser.swift; sourceTree = "<group>"; };
 		6D0811D02C2EFB6F009B3894 /* TransportStationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportStationUseCase.swift; sourceTree = "<group>"; };
 		6D2AE6932C2EA3F900D2F841 /* Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secret.xcconfig; sourceTree = "<group>"; };
+		6D4C2FCA2C30036E009CC4E7 /* PrimusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimusTests.swift; sourceTree = "<group>"; };
+		6D4C2FCC2C3058E7009CC4E7 /* BusRouteReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteReducer.swift; sourceTree = "<group>"; };
+		6D4C2FCE2C3058FB009CC4E7 /* BusRouteState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteState.swift; sourceTree = "<group>"; };
+		6D6616082C2F28E900CEB79B /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
+		6D6616092C2F28E900CEB79B /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		6D66160A2C2F28E900CEB79B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		6D66160B2C2F28E900CEB79B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6D6616122C2F290100CEB79B /* NaverMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMap.swift; sourceTree = "<group>"; };
+		6D6616142C2F290100CEB79B /* TransportMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportMainView.swift; sourceTree = "<group>"; };
 		6D847C392C2C5A8C002C8E09 /* primus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = primus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D847C3C2C2C5A8C002C8E09 /* primusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primusApp.swift; sourceTree = "<group>"; };
 		6D847C3E2C2C5A8C002C8E09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,14 +92,10 @@
 		6D847C592C2C5A8E002C8E09 /* primusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primusUITests.swift; sourceTree = "<group>"; };
 		6D847C5B2C2C5A8E002C8E09 /* primusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6D847C682C2C5ABD002C8E09 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		6D847C6E2C2C623B002C8E09 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		6D847C722C2C6A5D002C8E09 /* MainTabStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabStore.swift; sourceTree = "<group>"; };
 		6D847C762C2C6E22002C8E09 /* CommunityMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMainView.swift; sourceTree = "<group>"; };
-		6D847C782C2C6E40002C8E09 /* TransportMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportMainView.swift; sourceTree = "<group>"; };
 		6D847C7A2C2C6E69002C8E09 /* StatusCheckMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCheckMainView.swift; sourceTree = "<group>"; };
-		6D847C7C2C2C7750002C8E09 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
-		6D847C7E2C2C79AC002C8E09 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
-		6D847C802C2C7A74002C8E09 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6DFF6CD52C2F341900D12097 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D847C6C2C2C5CC9002C8E09 /* ComposableArchitecture in Frameworks */,
+				6DFF6CD82C2F345100D12097 /* NMapsMap in Frameworks */,
+				6D6616062C2F288F00CEB79B /* KakaoMapsSDK-SPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +146,7 @@
 		6D0811BF2C2EBDBB009B3894 /* UniTests */ = {
 			isa = PBXGroup;
 			children = (
+				6D4C2FCA2C30036E009CC4E7 /* PrimusTests.swift */,
 			);
 			path = UniTests;
 			sourceTree = "<group>";
@@ -167,6 +182,28 @@
 				6D0811C82C2ECA24009B3894 /* BusAPIResponse.swift */,
 				6D0811CA2C2EF838009B3894 /* StationAPIResponse.swift */,
 				6D0811CC2C2EF8B7009B3894 /* OpenAPIResponse.swift */,
+				6D4C2FCE2C3058FB009CC4E7 /* BusRouteState.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		6D66160C2C2F28E900CEB79B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6D6616082C2F28E900CEB79B /* MainNavigationView.swift */,
+				6D6616092C2F28E900CEB79B /* MainTabBarView.swift */,
+				6D66160A2C2F28E900CEB79B /* MainTabView.swift */,
+				6D66160B2C2F28E900CEB79B /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6D6616152C2F290100CEB79B /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				6D6616122C2F290100CEB79B /* NaverMap.swift */,
+				6D6616142C2F290100CEB79B /* TransportMainView.swift */,
+				6DFF6CD52C2F341900D12097 /* Coordinator.swift */,
 			);
 			path = Transport;
 			sourceTree = "<group>";
@@ -249,13 +286,10 @@
 		6D847C6D2C2C6230002C8E09 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6D847C6E2C2C623B002C8E09 /* MainTabView.swift */,
+				6D6616152C2F290100CEB79B /* Transport */,
+				6D66160C2C2F28E900CEB79B /* Main */,
 				6D847C7A2C2C6E69002C8E09 /* StatusCheckMainView.swift */,
 				6D847C762C2C6E22002C8E09 /* CommunityMainView.swift */,
-				6D847C782C2C6E40002C8E09 /* TransportMainView.swift */,
-				6D847C7C2C2C7750002C8E09 /* MainTabBarView.swift */,
-				6D847C7E2C2C79AC002C8E09 /* MainNavigationView.swift */,
-				6D847C802C2C7A74002C8E09 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +305,7 @@
 		6D847C712C2C6A17002C8E09 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				6D4C2FCC2C3058E7009CC4E7 /* BusRouteReducer.swift */,
 				6D847C722C2C6A5D002C8E09 /* MainTabStore.swift */,
 				6D0811B82C2EB0AD009B3894 /* TransportAPIStore.swift */,
 			);
@@ -295,6 +330,8 @@
 			name = primus;
 			packageProductDependencies = (
 				6D847C6B2C2C5CC9002C8E09 /* ComposableArchitecture */,
+				6D6616052C2F288F00CEB79B /* KakaoMapsSDK-SPM */,
+				6DFF6CD72C2F345100D12097 /* NMapsMap */,
 			);
 			productName = primus;
 			productReference = 6D847C392C2C5A8C002C8E09 /* primus.app */;
@@ -370,6 +407,8 @@
 			mainGroup = 6D847C302C2C5A8C002C8E09;
 			packageReferences = (
 				6D847C692C2C5CB2002C8E09 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				6D6616042C2F288F00CEB79B /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */,
+				6DFF6CD42C2F335600D12097 /* XCRemoteSwiftPackageReference "NMapsMap" */,
 			);
 			productRefGroup = 6D847C3A2C2C5A8C002C8E09 /* Products */;
 			projectDirPath = "";
@@ -414,24 +453,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D847C3F2C2C5A8C002C8E09 /* ContentView.swift in Sources */,
-				6D847C792C2C6E40002C8E09 /* TransportMainView.swift in Sources */,
 				6D0811B92C2EB0AD009B3894 /* TransportAPIStore.swift in Sources */,
 				6D847C412C2C5A8C002C8E09 /* Item.swift in Sources */,
-				6D847C7F2C2C79AC002C8E09 /* MainNavigationView.swift in Sources */,
 				6D0811CD2C2EF8B7009B3894 /* OpenAPIResponse.swift in Sources */,
 				6D0811C52C2EC9B6009B3894 /* BusAPIXMLParser.swift in Sources */,
 				6D847C772C2C6E22002C8E09 /* CommunityMainView.swift in Sources */,
+				6D4C2FCF2C305900009CC4E7 /* BusRouteState.swift in Sources */,
 				6D0811CF2C2EFA54009B3894 /* StationAPIXMLParser.swift in Sources */,
-				6D847C7D2C2C7750002C8E09 /* MainTabBarView.swift in Sources */,
 				6D0811D12C2EFB6F009B3894 /* TransportStationUseCase.swift in Sources */,
 				6D847C3D2C2C5A8C002C8E09 /* primusApp.swift in Sources */,
-				6D847C812C2C7A74002C8E09 /* MainView.swift in Sources */,
+				6D66160D2C2F28E900CEB79B /* MainNavigationView.swift in Sources */,
+				6D66160F2C2F28E900CEB79B /* MainView.swift in Sources */,
+				6D6616102C2F28E900CEB79B /* MainTabView.swift in Sources */,
+				6D6616112C2F28E900CEB79B /* MainTabBarView.swift in Sources */,
 				6D0811BC2C2EB400009B3894 /* TransportBusUseCase.swift in Sources */,
-				6D847C6F2C2C6251002C8E09 /* MainTabView.swift in Sources */,
 				6D0811C92C2ECA24009B3894 /* BusAPIResponse.swift in Sources */,
 				6D847C7B2C2C6E69002C8E09 /* StatusCheckMainView.swift in Sources */,
 				6D0811CB2C2EF838009B3894 /* StationAPIResponse.swift in Sources */,
 				6D847C732C2C6A5D002C8E09 /* MainTabStore.swift in Sources */,
+				6D6616162C2F290100CEB79B /* NaverMap.swift in Sources */,
+				6D4C2FCD2C3058EB009CC4E7 /* BusRouteReducer.swift in Sources */,
+				6D6616182C2F290100CEB79B /* TransportMainView.swift in Sources */,
+				6DFF6CD62C2F341900D12097 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +484,7 @@
 			files = (
 				6D0811C12C2EBDFB009B3894 /* TransportBusUseCaseTests.swift in Sources */,
 				6D847C502C2C5A8E002C8E09 /* primusTests.swift in Sources */,
+				6D4C2FCB2C30036E009CC4E7 /* PrimusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +810,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6D6616042C2F288F00CEB79B /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.5;
+			};
+		};
 		6D847C692C2C5CB2002C8E09 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -774,13 +826,31 @@
 				minimumVersion = 1.11.2;
 			};
 		};
+		6DFF6CD42C2F335600D12097 /* XCRemoteSwiftPackageReference "NMapsMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jaemyeong/NMapsMap.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.17.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6D6616052C2F288F00CEB79B /* KakaoMapsSDK-SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D6616042C2F288F00CEB79B /* XCRemoteSwiftPackageReference "KakaoMapsSDK-SPM" */;
+			productName = "KakaoMapsSDK-SPM";
+		};
 		6D847C6B2C2C5CC9002C8E09 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6D847C692C2C5CB2002C8E09 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		6DFF6CD72C2F345100D12097 /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DFF6CD42C2F335600D12097 /* XCRemoteSwiftPackageReference "NMapsMap" */;
+			productName = NMapsMap;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

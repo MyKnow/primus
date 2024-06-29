@@ -1,5 +1,5 @@
 {
-  "originHash" : "e7024a9cd3fa1c40fa4003b3b2b186c00ba720c787de8ba274caf8fc530677e8",
+  "originHash" : "789e2a400203a4ff3f84a59e5ad9ec9b323aa3edcd85704c8bbac8518cf77a3e",
   "pins" : [
     {
       "identity" : "combine-schedulers",
@@ -8,6 +8,24 @@
       "state" : {
         "revision" : "9dc9cbe4bc45c65164fa653a563d8d8db61b09bb",
         "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "kakaomapssdk-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git",
+      "state" : {
+        "revision" : "eb68e7b2ada27deb652acf07b985d111b5c16895",
+        "version" : "2.10.5"
+      }
+    },
+    {
+      "identity" : "nmapsmap",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jaemyeong/NMapsMap.git",
+      "state" : {
+        "revision" : "f312d23488d4a15a3a9cc27e66dc5afa3afc0145",
+        "version" : "3.17.0"
       }
     },
     {

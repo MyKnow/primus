@@ -21,11 +21,11 @@ struct BusAPIResponse {
 
 // MARK: - MsgBody
 struct BusMsgBody {
-    var busLocationList: [BusLocationList]
+    var busLocationList: [BusLocation]
 }
 
-// MARK: - BusLocationList
-struct BusLocationList {
+// MARK: - BusLocation
+struct BusLocation : Equatable {
     var endBus, lowPlate, plateNo, plateType: String
     var remainSeatCnt, routeID, stationID, stationSeq: String
 }
