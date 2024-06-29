@@ -2,7 +2,7 @@ import Foundation
 
 class StationAPIXMLParser: NSObject, XMLParserDelegate {
     private var currentElement: String?
-    private var currentBusRouteStationList: BusRouteStation?
+    private var currentBusRouteStation: BusRouteStation?
     private var busRouteStationList: [BusRouteStation] = []
     
     private var queryTime: String = ""
@@ -15,8 +15,8 @@ class StationAPIXMLParser: NSObject, XMLParserDelegate {
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         currentElement = elementName
         
-        if elementName == "busStationList" {
-            currentBusRouteStationList = BusRouteStation(centerYn: .n, districtCD: "", mobileNo: "", regionName: .용인, stationID: "", stationName: "", x: "", y: "", stationSeq: "", turnYn: .n)
+        if elementName == "busRouteStationList" {
+            currentBusRouteStation = BusRouteStation(centerYn: .n, districtCD: "", mobileNo: "", regionName: .용인, stationID: "", stationName: "", x: "", y: "", stationSeq: "", turnYn: .n)
         }
     }
     
@@ -26,43 +26,42 @@ class StationAPIXMLParser: NSObject, XMLParserDelegate {
         guard let currentElement = currentElement else { return }
         
         switch currentElement {
-        case "comMsgHeader":
-            comMsgHeader += trimmedString
+        case "centerYn":
+            currentBusRouteStation?.centerYn = Yn(rawValue: trimmedString) ?? .n
+        case "districtCd":
+            currentBusRouteStation?.districtCD += trimmedString
+        case "mobileNo":
+            currentBusRouteStation?.mobileNo += trimmedString
+        case "regionName":
+            currentBusRouteStation?.regionName = RegionName(rawValue: trimmedString) ?? .용인
+        case "stationId":
+            currentBusRouteStation?.stationID += trimmedString
+        case "stationName":
+            currentBusRouteStation?.stationName += trimmedString
+        case "x":
+            currentBusRouteStation?.x += trimmedString
+        case "y":
+            currentBusRouteStation?.y += trimmedString
+        case "stationSeq":
+            currentBusRouteStation?.stationSeq += trimmedString
+        case "turnYn":
+            currentBusRouteStation?.turnYn = Yn(rawValue: trimmedString) ?? .n
         case "queryTime":
             queryTime += trimmedString
         case "resultCode":
             resultCode += trimmedString
         case "resultMessage":
             resultMessage += trimmedString
-        case "centerYn":
-            currentBusRouteStationList?.centerYn = Yn(rawValue: trimmedString) ?? .n
-        case "districtCD":
-            currentBusRouteStationList?.districtCD += trimmedString
-        case "mobileNo":
-            currentBusRouteStationList?.mobileNo += trimmedString
-        case "regionName":
-            currentBusRouteStationList?.regionName = RegionName(rawValue: trimmedString) ?? .용인
-        case "stationID":
-            currentBusRouteStationList?.stationID += trimmedString
-        case "stationName":
-            currentBusRouteStationList?.stationName += trimmedString
-        case "x":
-            currentBusRouteStationList?.x += trimmedString
-        case "y":
-            currentBusRouteStationList?.y += trimmedString
-        case "stationSeq":
-            currentBusRouteStationList?.stationSeq += trimmedString
-        case "turnYn":
-            currentBusRouteStationList?.turnYn = Yn(rawValue: trimmedString) ?? .n
         default:
             break
         }
     }
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        if elementName == "busStationList", let currentBusRouteStationList = currentBusRouteStationList {
-            busRouteStationList.append(currentBusRouteStationList)
-        } else if elementName == "msgHeader" {
+        if elementName == "busRouteStationList", let currentBusRouteStation = currentBusRouteStation {
+            busRouteStationList.append(currentBusRouteStation)
+            self.currentBusRouteStation = nil
+        } else if elementName == "msgBody" {
             let msgHeader = MsgHeader(queryTime: queryTime, resultCode: resultCode, resultMessage: resultMessage)
             let msgBody = StationMsgBody(busRouteStationList: busRouteStationList)
             apiResponse = StationAPIResponse(comMsgHeader: comMsgHeader, msgHeader: msgHeader, msgBody: msgBody)

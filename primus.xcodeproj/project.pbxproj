@@ -19,6 +19,7 @@
 		6D4C2FCB2C30036E009CC4E7 /* PrimusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4C2FCA2C30036E009CC4E7 /* PrimusTests.swift */; };
 		6D4C2FCD2C3058EB009CC4E7 /* BusRouteReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4C2FCC2C3058E7009CC4E7 /* BusRouteReducer.swift */; };
 		6D4C2FCF2C305900009CC4E7 /* BusRouteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4C2FCE2C3058FB009CC4E7 /* BusRouteState.swift */; };
+		6D4C2FD12C3068C7009CC4E7 /* BusStationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4C2FD02C3068BB009CC4E7 /* BusStationStore.swift */; };
 		6D6616062C2F288F00CEB79B /* KakaoMapsSDK-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 6D6616052C2F288F00CEB79B /* KakaoMapsSDK-SPM */; };
 		6D66160D2C2F28E900CEB79B /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6616082C2F28E900CEB79B /* MainNavigationView.swift */; };
 		6D66160F2C2F28E900CEB79B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D66160B2C2F28E900CEB79B /* MainView.swift */; };
@@ -74,6 +75,7 @@
 		6D4C2FCA2C30036E009CC4E7 /* PrimusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimusTests.swift; sourceTree = "<group>"; };
 		6D4C2FCC2C3058E7009CC4E7 /* BusRouteReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteReducer.swift; sourceTree = "<group>"; };
 		6D4C2FCE2C3058FB009CC4E7 /* BusRouteState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteState.swift; sourceTree = "<group>"; };
+		6D4C2FD02C3068BB009CC4E7 /* BusStationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStationStore.swift; sourceTree = "<group>"; };
 		6D6616082C2F28E900CEB79B /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
 		6D6616092C2F28E900CEB79B /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		6D66160A2C2F28E900CEB79B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				6D4C2FCC2C3058E7009CC4E7 /* BusRouteReducer.swift */,
 				6D847C722C2C6A5D002C8E09 /* MainTabStore.swift */,
 				6D0811B82C2EB0AD009B3894 /* TransportAPIStore.swift */,
+				6D4C2FD02C3068BB009CC4E7 /* BusStationStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D847C3F2C2C5A8C002C8E09 /* ContentView.swift in Sources */,
+				6D4C2FD12C3068C7009CC4E7 /* BusStationStore.swift in Sources */,
 				6D0811B92C2EB0AD009B3894 /* TransportAPIStore.swift in Sources */,
 				6D847C412C2C5A8C002C8E09 /* Item.swift in Sources */,
 				6D0811CD2C2EF8B7009B3894 /* OpenAPIResponse.swift in Sources */,
